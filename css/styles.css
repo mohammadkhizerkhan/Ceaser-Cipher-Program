@@ -16,3 +16,18 @@ body{
     padding: 5px;
 
 }
+
+.btn{
+    background-color: rgb(80, 78, 78);
+    border-radius: 0.5rem;
+    width: 200px;
+    color: white;
+    transition: all 0.4s linear 0.1ms;
+}
+
+.btn:hover{
+    /* width: 155px; */
+    background-color:#e9ecef;
+    color: black;
+    font-size: large;
+}
