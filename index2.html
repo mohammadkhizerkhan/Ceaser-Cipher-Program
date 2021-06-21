@@ -1,0 +1,63 @@
+<!--
+    Ceaser Cipher
+    Created by: Jeremy Locatelli and Brandon Engholm
+-->
+
+<html>
+    <head>
+        <title>Ceaser Cipher</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="cipher.js"></script>
+    </head>
+    
+    <body>
+        <style>
+            @import url('css/styles.css');
+        </style>
+        <div class="jumbotron">
+          <h1 class="display-3">Ceaser Cipher</h1>
+          <hr class="my-4">
+        </div>
+        <div class="inputs">
+            <div class="input-items">
+                <label for="strBox">
+                    Text:
+                </label>
+                <input type="text" name="input" id="strBox"  /><br>
+            </div>
+
+            <div class="input-items">
+                <label for="keyBox">
+                    Offset for Cipher:
+                </label>
+                <input type="number" name="offset" id="keyBox"/><br>
+            </div>
+
+        </div>
+        <div class="inputs">
+            <div class="input-items">
+                <label for="enc">
+                    Encrypt Text:
+                </label>
+                <input type="radio" name="choice" value="encrypt" id="enc" />
+            </div>
+            <div class="input-items">
+                <label for="dec">
+                    Decrypt Text:
+                </label> 
+                <input type="radio" name="choice" value="decrypt" id="dec" />
+            </div>
+        </div>
+
+        <input type="button" onClick="executeCipher();" value="Execute" />
+        <div id="displayArea" style="margin: 4px;">
+            <textarea id="displayBox"></textarea>
+        </div>
+        
+    </body>
+</html>
+

@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    margin: 4px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+    margin: 17px 14px;
+}
+
+.input-items{
+    padding: 5px;
+
+}
