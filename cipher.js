@@ -59,7 +59,7 @@
     function cipher(ch, value){
         var code;
         var encryptChar;
-        var debug =ch.charCodeAt(0);
+        // var debug =ch.charCodeAt(0);
         var really = 'a';
         really = really.charCodeAt(0);
         code = ch.charCodeAt(0) - really;//convert to number between 0 and 25
@@ -77,7 +77,7 @@
     function antiCipher(ch, value){
         var code;
         var encryptChar;
-        var debug =ch.charCodeAt(0);
+        // var debug =ch.charCodeAt(0);
         var really = 'a';
         really = really.charCodeAt(0);
         code = ch.charCodeAt(0) - really;//convert to number between 0 and 25
