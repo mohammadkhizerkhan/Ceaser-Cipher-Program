@@ -1,4 +1,5 @@
-    function executeCipher(){
+// just a comment
+function executeCipher(){
         var str = document.getElementById("strBox").value;
         var key = parseInt(document.getElementById("keyBox").value);
         
